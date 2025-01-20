@@ -1,0 +1,136 @@
+.skill-wrapper{
+  position: relative;
+  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin: 100px 0px;
+}
+.skill-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skillset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  
+}
+.skillet1{
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    align-items: start;
+    box-shadow: 0 0 20px var(--main-color);
+    width: 200px;
+
+}
+.skillset1-body{
+  display: flex;
+  flex-direction: column;
+}
+.skillset1-body span{
+  display: flex;
+  gap: 20px;
+}
+.skillet1:hover{
+    transform: scale(1s);
+    box-shadow: 0 0 40px var(--main-color);
+}
+.skillet11{
+
+  display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    align-items: start;
+    box-shadow: 0 0 20px var(--main-color);
+    width: 200px;
+
+}
+.skillet11:hover{
+  transform: scale(1s);
+  box-shadow: 0 0 30px var(--main-color);
+}
+.skillet1-header-main{
+   padding: 6px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 0 10px var(--main-color);
+   margin-bottom: 10px;
+   width: 100%;
+
+}
+.skillset1-body{
+  display: flex;
+  flex-direction: column;
+}
+.skill-body{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skillet3{
+  
+  display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    align-items: start;
+    box-shadow: 0 0 20px var(--main-color);
+    width: 200px;
+}
+
+.tools{
+    text-align: center;
+    margin: 20px;
+}
+/* arrow */
+.arrow-header-skill{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -100px;
+  left: 50%;
+  width: 500px;
+}
+.arrow_middle-skill-img{
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .skill-wrapper {
+    margin: 200px 0px;
+}
+}
+@media (max-width: 430px) {
+  .skillset {
+    flex-direction: column;
+}
+.skillet1 {
+  width: 100%;
+}
+.skillet11 {
+  width: 100%;
+}
+.skillet3 {
+  width: 100%;
+}
+.arrow-header-skill{
+  width: 400px;
+}
+
+}
+
