@@ -8,6 +8,7 @@
  margin: 100px 0px;
 }
 .skill-container{
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,6 +111,16 @@
 .arrow_middle-skill-img{
   width: 100%;
 }
+@media (max-width: 430px) {
+ 
+  .skill-container{
+
+
+  }
+  
+
+}
+
 @media (max-width: 768px) {
   .skill-wrapper {
     margin: 200px 0px;

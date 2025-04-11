@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import profile from "../Assets/profile-icon.jpg";
 import arrow_middle from "../Assets/Arrow_middle.png";
 import Bubble from "../Bubble/Bubble";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const About = () => {
+  useEffect(()  => {
+    Aos.init(
+        {
+            duration: 2500,
+            easing: "ease-out-cubic"
+        });
+    Aos.refresh({
+       duration: 2000,
+            easing: "ease-out-cubic"
+    })
+},[]);
   return (
     <div id="about" className="about">
       <Bubble/>
       <section className="about-section">
-            <div><h2>ABOUT</h2></div> 
-        <div class="flip-card">
+            <div data-aos="fade-up" ><h2>ABOUT</h2></div> 
+        <div data-aos="fade-down"  class="flip-card">
           <div class="flip-card-inner">
-            <div class="flip-card-front">
+            <div data-aos="fade-up" class="flip-card-front">
               <img className="about-img" src={profile} alt="Avatar" />
             </div>
             <div class="flip-card-back">
-              <div className="about">
+              <div data-aos="fade-down" className="about">
                 <p>
                   
                   Hello! I’m Okogbe Augustine, a passionate and versatile

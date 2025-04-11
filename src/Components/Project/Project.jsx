@@ -10,57 +10,57 @@ import Bubble from "../Bubble/Bubble";
 
 export const Project = () => {
   return (
-    <div className="project-bubble">
+    <div  className="project-bubble">
       <Bubble/>
     <section className="project" id="project">
-      <h2 >PROJECT</h2>
+    <div data-aos="fade-up"> <h2 >PROJECT</h2></div> 
 
-      <div className="timeline-items">
+      <div  className="timeline-items">
         <div className="timeline-item">
-          <div className="timeline-dot"> </div>
-          <div className="timeline-date">CLOTHING STORE</div>
+          <div data-aos="fade-up" className="timeline-dot"> </div>
+          <div data-aos="fade-down"  className="timeline-date">CLOTHING STORE</div>
 
-          <div className="home-img">
+          <div data-aos="fade-right"  className="home-img">
             <img src={clothingstore} alt="" />            
           </div>
-          <div className="link">
+          <div data-aos="fade-up" className="link">
             <img className="link1" src={info} alt="" />
-            <img className="link1" src={link} alt="" />
+       <a href="http://localhost:3001/"><img className="link1" src={link}  alt="" /></a>     
           </div>
         </div>
-        <div className="timeline-item">
-          <div className="timeline-dot"> </div>
-          <div className="timeline-date">SCHOOL MANAGEMENT SYSTEM</div>
+        <div  className="timeline-item">
+          <div data-aos="fade-right" className="timeline-dot"> </div>
+          <div data-aos="fade-down"  className="timeline-date">SCHOOL MANAGEMENT SYSTEM</div>
 
-          <div className="home-img">
+          <div data-aos="fade-left"  className="home-img">
             <img src={schoolmgt} alt="" />
           </div>
-          <div className="link">
+          <div data-aos="fade-up" className="link">
             <img  onclick="document.getElementById('')" className="link1" src={info} alt="" />
             <img className="link1" src={link} alt="" />
           </div>
         </div>
 
-        <div className="timeline-item">
-          <div className="timeline-dot"> </div>
-          <div className="timeline-date">QUIZ APP</div>
+        <div data-aos="fade-up" className="timeline-item">
+          <div data-aos="fade-left" className="timeline-dot"> </div>
+          <div data-aos="fade-up" className="timeline-date">QUIZ APP</div>
 
-          <div className="home-img">
+          <div data-aos="fade-down" className="home-img">
             <img src={quize} alt="" />  
           </div>
-          <div className="link">
+          <div data-aos="fade-up" className="link">
             <img className="link1" src={info} alt="" />
             <img className="link1" src={link} alt="" />
           </div>
         </div>
         <div className="timeline-item">
-          <div className="timeline-dot"> </div>
-          <div className="timeline-date">JOB PORTAL</div>
+          <div data-aos="fade-up" className="timeline-dot"> </div>
+          <div data-aos="fade-down" className="timeline-date">JOB PORTAL</div>
 
-          <div className="home-img">
-            <img src={clothingstore} alt="" />
+          <div data-aos="fade-up" className="home-img">
+            <img  src={clothingstore} alt="" />
             </div>
-            <div className="link">
+            <div data-aos="fade-up" className="link">
             <img className="link1" src={info} alt="" />
             <img className="link1" src={link} alt="" />
           </div>

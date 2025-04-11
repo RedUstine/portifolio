@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useEffect } from 'react'
 import "./Skills.css";
 import reactImg from "../Assets/react.png";
 import htmlImg from "../Assets/html.png"
 import arrow_middle from "../Assets/Arrow_middle.png";
 import Bubble from '../Bubble/Bubble';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const skillset1Data = [
     {
@@ -22,7 +24,7 @@ const skillset1Data = [
 const skillset3Data = [
     {
         imgURL: reactImg,
-        title: "MONGODB FOR DATA BASE",
+        title: "MONGODB",
     },
     {
         imgURL: htmlImg,
@@ -46,16 +48,29 @@ const skillset2Data = [
         imgURL: htmlImg,
         title: "ADOBE ILLUSTRATOR",
     },
-]
+];
+
+
 
 export const Skills = () => {
+    useEffect(()  => {
+        Aos.init(
+            {
+                duration: 2500,
+                easing: "ease-out-cubic"
+            });
+        Aos.refresh({
+           duration: 2000,
+                easing: "ease-out-cubic"
+        })
+    },[]);
   return (
-      <div id='skill' className='skill-wrapper'>  
+      <div  id='skill' className='skill-wrapper'>  
           <Bubble/>
-        <div className="skill-container">
+        <div data-aos="fade-left" className="skill-container">
               <h1 className='skill-header'>SKILL </h1>
               <div className="skillset">
-                  <div className='skillet1'>
+                  <div data-aos="fade-up-right" className='skillet1'>
                     <h3 className='skillet1-header-main'>FRONTEND DEVELOPER</h3>
                   <h4 className='tools'>Tools</h4> 
                   <ul className="skillset1-body">
@@ -66,7 +81,7 @@ export const Skills = () => {
                       }
                       </ul>
                   </div>
-                  <div className='skillet11'>
+                  <div data-aos="fade-up" className='skillet11'>
                   <h3 className='skillet1-header-main'>UI/UX</h3>
                   <h4 className='tools'>Tools</h4> 
                   <ul className="skillset1-body">
@@ -77,7 +92,7 @@ export const Skills = () => {
                       }
                       </ul>
                   </div>
-                  <div className='skillet3'>
+                  <div data-aos="fade-right" className='skillet3'>
                   <h3 className='skillet1-header-main'>BACKEND DEVELOPER</h3>
                   <h4 className='tools'>Tools</h4> 
                   <ul className="skillset1-body">

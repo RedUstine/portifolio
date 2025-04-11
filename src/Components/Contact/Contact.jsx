@@ -1,21 +1,34 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./Contact.css";
 import map from "../Assets/map.svg"
 import Bubble from '../Bubble/Bubble';
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import arrow_middle from "../Assets/Arrow_middle.png";
 
 
 export const Contact = () => {
+  useEffect(()  => {
+    Aos.init(
+        {
+            duration: 2000,
+            easing: "ease-out-cubic"
+        });
+    Aos.refresh({
+       duration: 2000,
+            easing: "ease-out-cubic"
+    })
+},[]);
   return (
     <div className='contact' id='contact'>
       <Bubble/>
           <section className='contact-section'>
-             <div> <h2 >CONTACT</h2></div> 
-              <div className="contact-container">
+             <div data-aos="fade-up" > <h2 >CONTACT</h2></div> 
+              <div data-aos="fade-down" className="contact-container">
                   <form  action="" className='the-form'>
-                      <div><h1>Send A Message</h1></div>
+                      <div data-aos="fade-left"><h1>Send A Message</h1></div>
                       <br />
-                      <div className='contact-form'>
+                      <div data-aos="fade-up" className='contact-form'>
                       <label htmlFor="">First Name</label>
                       <input type="text" id='fname' name='firstname' placeholder='Enter Your First Name' />
                        <br />
@@ -38,7 +51,7 @@ export const Contact = () => {
                           </div>
                   </form>
                   <br />
-                  <div className="contact-map">
+                  <div data-aos="fade-right" className="contact-map">
                   <img  src={map} alt="" />
                   </div>
                 
