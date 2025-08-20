@@ -73,7 +73,7 @@ importers:
         version: 2.1.4
     devDependencies:
       autoprefixer:
-        specifier: ^10.4.7
+        specifier: ^10.4.14
         version: 10.4.20(postcss@8.5.0)
       postcss:
         specifier: ^8.5

@@ -265,10 +265,11 @@ a:focus {
     0.15s ease-in-out;
 }
 
-body {
-  @apply bg-background text-foreground;
-}
-
-* {
-  @apply border-border;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
